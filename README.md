@@ -53,14 +53,30 @@ python3 -m venv env
 
 Ative o ambiente virtual:
 
+No Linux:
+
 ```
 source env/bin/activate
 ```
 
-Instale as dependências no seu ambiente Python usando o comando
+No Windows (cmd):
+
+```
+env\Scripts\activate.bat
+```
+
+Coloque os arquivos deste repositório na pasta env e instale as dependências no seu ambiente Python usando o comando
+
+No Linux:
 
 ```
 pip install -r scripts/IVIScraper/requirements.txt
+```
+
+No Windows (cmd):
+
+```
+pip install -r env/Scripts/IVIScraper/requirements.txt
 ```
 
 Só é necessário fazer isso uma única vez, exceto se o arquivo
@@ -79,6 +95,7 @@ Em seguida, instale o seu ambiente virtual no Jupyter:
 ```
 python3 -m ipykernel install --user --name=coronabr
 ```
+
 
 Ao abrir o caderno Jupyter, selecione no canto superior direito o ambiente
 "`coronabr`". Isso só é necessário fazer uma única vez pois, ao salvar o
